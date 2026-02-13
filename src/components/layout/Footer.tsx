@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Shield } from 'lucide-react'
+import GlobeLogo from '@/components/icons/GlobeLogo'
 
 const footerLinks = {
   services: [
@@ -27,7 +27,7 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-2.5 group">
               <div className="relative flex items-center justify-center">
                  <div className="absolute inset-0 bg-accent/20 blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <Shield className="relative h-7 w-7 text-accent transition-transform duration-300 group-hover:scale-110" strokeWidth={1.5} />
+                <GlobeLogo className="relative h-7 w-7 text-accent transition-transform duration-300 group-hover:scale-110" strokeWidth={1.5} />
               </div>
               <span className="text-lg font-semibold tracking-tight text-white transition-colors duration-300">
                 Pathway<span className="text-accent">Security</span>

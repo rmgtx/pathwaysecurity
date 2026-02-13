@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Shield, ChevronDown } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
+import GlobeLogo from '@/components/icons/GlobeLogo'
 import { cn } from '@/lib/utils'
 
 const services = [
@@ -74,7 +75,7 @@ export default function Header() {
         <Link to="/" className="flex items-center gap-2.5 group" aria-label="Pathway Security – Home">
           <div className="relative flex items-center justify-center">
             <div className="absolute inset-0 bg-accent/20 blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <Shield
+            <GlobeLogo
               className="relative h-7 w-7 text-accent transition-transform duration-300 group-hover:scale-110"
               strokeWidth={1.5}
             />
